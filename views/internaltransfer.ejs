@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make An Internal Transfer</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="container-fluid vh-100" style="margin-top:10px">
+        <div class="" style="margin-top:100px">
+            <div class="rounded d-flex justify-content-center">
+                <div class="col-md-4 col-sm-12 shadow-lg p-5 bg-light">
+                    <div class="text-center">
+                        <h3 class="text-primary">Internal Transfer
+                        </h3>
+                    </div>
+                    <hr class="my-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group label-background">
+                                    <label for="fromAccount">From:</label>
+                                    <select class="form-control" id="fromAccount">
+                                        <option>Checking</option>
+                                        <option>Savings</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group label-background">
+                                    <label for="toAccount">To:</label>
+                                    <select class="form-control" id="toAccount">
+                                        <option>Checking</option>
+                                        <option>Savings</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group label-background">
+                                    <label for="amount">Amount:</label>
+                                    <input type="text" class="form-control" id="amount" placeholder="Enter amount">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group label-background">
+                                    <label for="memo">Memo:</label>
+                                    <input type="text" class="form-control" id="memo" placeholder="Enter Memo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <form method="post">
+                        <div class="text-center">
+                            <button class="btn btn-primary text-center mt-2" type="submit">
+                                Transfer
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

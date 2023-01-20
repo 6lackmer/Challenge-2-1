@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Search</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="container-fluid vh-100" style="margin-top:10px">
+        <div class="" style="margin-top:100px">
+            <div class="rounded d-flex justify-content-center">
+                <div class="col-md-9 col-sm-12 shadow-lg p-5 bg-light">
+                    <div class="text-center">
+                        <h3 class="text-primary">Account Search Results
+                        </h3>
+                    </div>
+                    <hr class="my-4">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col">First Name</div>
+                                    <div class="col">Last Name</div>
+                                    <div class="col">Customer ID</div>
+                                    <div class="col">Position</div>
+                                    <div class="col"></div>
+                                    <div class="col"></div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col">Jon</div>
+                                    <div class="col">Doe</div>
+                                    <div class="col">1293</div>
+                                    <div class="col">
+                                        <select class="form-control w-100">
+                                            <option value="employee" <%= selectedValue === "employee" ? "selected" : "" %>>Employee</option>
+                                            <option value="customer" <%= selectedValue === "customer" ? "selected" : "" %>>Customer</option>
+                                        </select>
+                                    </div>                                    
+                                    <div class="col">
+                                        <form method="post">
+                                            <button class="btn btn-secondary text-center w-100" type="submit"
+                                                name="submit" value="changeposition">Change Position</button>
+                                        </form>
+                                    </div>
+                                    <div class="col">
+                                        <form method="post">
+                                            <button class="btn btn-secondary text-center w-100" type="submit" name="submit" value="changepassword">Change Password</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <form method="post">
+                        <div class="text-center">
+                            <button class="btn btn-primary text-center mt-2" type="submit" name="submit" value="back">
+                                Back
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

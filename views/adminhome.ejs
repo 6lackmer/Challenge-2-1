@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Home</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="container-fluid vh-100" style="margin-top:10px">
+        <div class="" style="margin-top:100px">
+            <div class="rounded d-flex justify-content-center">
+                <div class="col-md-4 col-sm-12 shadow-lg p-5 bg-light">
+                    <div class="text-center">
+                        <h3 class="text-primary">Welcome {fname admin}
+                        </h3>
+                    </div>
+                    <hr class="my-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <form method="post">
+                                    <button class="btn btn-secondary text-center btn-sm w-100" type="submit"
+                                        name="submit" value="checking">
+                                        Checking
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="col">
+                                <form method="post">
+                                    <button class="btn btn-secondary text-center btn-sm w-100" type="submit"
+                                        name="submit" value="savings">
+                                        Savings
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <form method="post">
+                                    <button class="btn btn-secondary text-center btn-sm w-100" type="submit"
+                                        name="submit" value="internaltransfer">
+                                        Internal Transfer
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="col">
+                                <form method="post">
+                                    <button class="btn btn-secondary text-center btn-sm w-100" type="submit"
+                                        name="submit" value="externaltransfer">
+                                        External Transfer
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form method="post">
+                                    <button class="btn btn-secondary text-center btn-sm w-100" type="submit"
+                                        name="submit" value="changepassword">
+                                        Change Password
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <hr class="my-4">
+                        <div class="text-center">
+                            <h3 class="text-secondary">Admin Tools:
+                            </h3>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form method="post">
+                                    <button class="btn btn-secondary text-center btn-sm w-100" type="submit"
+                                        name="submit" value="accountsearch">
+                                        Account Search
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <form method="post">
+                        <div class="text-center">
+                            <button class="btn btn-primary text-center" type="submit" name="submit" value="logout">
+                                Logout
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
